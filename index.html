@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn how to build accessible and SEO-friendly web pages using HTML5 semantic elements. A beginner's guide to web structure, headings, and content organization.">
+  <title>Accessible & SEO-Friendly HTML5 Web Page</title>
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a href="#maincontent">Skip to main content</a>
+
+  <header>
+    <h1>Accessible & SEO-Friendly Web Page</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="maincontent">
+    <article>
+      <header>
+        <h2 id="about">About This Page</h2>
+      </header>
+      <p>
+        This sample webpage demonstrates how to build a clean, semantic structure using HTML5. 
+        It follows accessibility best practices and includes beginner-friendly SEO features to 
+        improve discoverability by search engines.
+      </p>
+    </article>
+
+    <section aria-labelledby="articles">
+      <h2 id="articles">Latest Articles</h2>
+
+      <article>
+        <header>
+          <h3>Why Semantic HTML Matters</h3>
+        </header>
+        <p>
+          Semantic HTML provides meaningful structure to your webpage. Screen readers and search 
+          engines can better understand content when tags like <code>&lt;header&gt;</code>, 
+          <code>&lt;main&gt;</code>, and <code>&lt;article&gt;</code> are used correctly.
+        </p>
+      </article>
+
+      <article>
+        <header>
+          <h3>Accessibility for Everyone</h3>
+        </header>
+        <p>
+          Adding ARIA labels, skip links, and clear headings improves the user experience for 
+          people using assistive technologies. Accessibility is not optional—it’s essential.
+        </p>
+      </article>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <p>
+        Questions or feedback? Reach out via 
+        <a href="mailto:info@example.com">info@example.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Accessible Web Example. All rights reserved.</p>
+  </footer>
+</body>
+</html>
